@@ -1,0 +1,6 @@
+<h3>Toutes les technos</h3>
+
+<!-- *ngFor : for of coté template -->
+<div *ngFor="let techno of allTechnos" >
+    <app-techno-details [tech]="techno" (deleteTech)="deleteTechno($event)"></app-techno-details>
+</div>
